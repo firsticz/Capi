@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="image\01.png" />
+    <None Remove="image\02.png" />
+    <None Remove="image\capi.jfif" />
+    <None Remove="image\capi.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GlobalKeyboardHooker" Version="1.0.1" />
+    <PackageReference Include="KeyboardHookLite" Version="1.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="image\01.png" />
+    <Resource Include="image\02.png" />
+    <Resource Include="image\capi.jfif" />
+    <Resource Include="image\capi.png" />
+  </ItemGroup>
+
+</Project>
